@@ -10,9 +10,9 @@
 
 <body>
 <%= render "layouts/navbar"%>
-<%= form_with model: resource, url: user_registration_path, id: 'new_user', class: 'registration-main', local: true do |f| %>
-
-<div class='form-wrap'>
+<div class= "background-img-sign-up">
+   <%= form_with model: resource, url: user_registration_path, id: 'new_user', class: 'registration-main', local: true do |f| %>
+   <div class='form-wrap'>
   <div class='form-header'>
     <h1 class='form-header-text'>
       新規登録
@@ -62,7 +62,7 @@
   </div> 
 
   <!-- Date ò birth -->
-<div class="form-group">
+  <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">生年月日</label>
       <span class="indispensable">必須</span>
@@ -79,7 +79,7 @@
                     end_year: (Time.now.year),
                     date_separator: '%s'),
                   "<p> 年 </p>", "<p> 月 </p>") + "<p> 日 </p>" %>
-    </div>
+  </div>
   <!-- Mật khẩu -->
   <div class="form-group">
     <div class='form-text-wrap'>
@@ -93,9 +93,10 @@
     <%= f.submit "登録", class:"register-red-btn" %>
   </div>
 <% end %>
-<%#= render "layouts/footer" %>
+</div>
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<%#= render "layouts/footer" %>
 </body>
 </html>

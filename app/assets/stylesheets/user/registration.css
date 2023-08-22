@@ -1,17 +1,15 @@
 /* Định dạng chung cho toàn bộ mẫu đăng ký */
-body {
-  background-image: url('flowers-1516734_1280.jpeg'); /* Thay 'path/to/your/image.jpg' bằng đường dẫn tới hình ảnh của bạn */
+.background-img-sign-up {
+  background-image: url('flowers-1516734_1280.jpeg'); 
   background-size: cover; /* Căn chỉnh hình ảnh để nó trải đều trên toàn bộ phần thân */
   background-repeat: no-repeat; /* Không lặp lại hình ảnh */
   background-attachment: fixed; /* Giữ hình ảnh nền cố định khi cuộn trang */
-  background-position: center center; /* Canh giữa hình ảnh nền */
-  background-color: #f0f0f0; /* Màu nền phụ (nếu hình ảnh không hiển thị hoặc trong quá trình tải) */
 }
 
 .registration-main {
   max-width: 600px; /* Giới hạn chiều rộng của form để nó không quá rộng */
   height: 900px;
-  margin: 30px auto; /* Căn giữa form trên trang */
+  margin: auto; /* Căn giữa form trên trang */
   padding: 20px;
   background-color: hsl(0, 0%, 100%); /* Màu nền cho form */
   border: 1px solid #ccc; /* Đường viền xung quanh form */
