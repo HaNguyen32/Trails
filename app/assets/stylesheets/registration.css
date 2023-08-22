@@ -1,0 +1,102 @@
+/* Định dạng chung cho toàn bộ mẫu đăng ký */
+body {
+  background-image: url('flowers-1516734_1280.jpeg'); /* Thay 'path/to/your/image.jpg' bằng đường dẫn tới hình ảnh của bạn */
+  background-size: cover; /* Căn chỉnh hình ảnh để nó trải đều trên toàn bộ phần thân */
+  background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+  background-attachment: fixed; /* Giữ hình ảnh nền cố định khi cuộn trang */
+  background-position: center center; /* Canh giữa hình ảnh nền */
+  background-color: #f0f0f0; /* Màu nền phụ (nếu hình ảnh không hiển thị hoặc trong quá trình tải) */
+}
+
+.registration-main {
+  max-width: 600px; /* Giới hạn chiều rộng của form để nó không quá rộng */
+  height: 900px;
+  margin: 30px auto; /* Căn giữa form trên trang */
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%); /* Màu nền cho form */
+  border: 1px solid #ccc; /* Đường viền xung quanh form */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+}
+
+/* Định dạng cho tiêu đề của form */
+.form-header {
+  text-align: center;
+}
+
+.form-header-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Định dạng cho các nhãn và input fields */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-text-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.form-text {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.indispensable {
+  color: red;
+}
+
+/* Định dạng cho các trường input */
+.input-default {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.sex-select {
+  width: 50%;
+  height: 40px;
+
+}
+
+/* Định dạng cho trường ngày tháng năm sinh */
+.select-birth {
+  width: auto;
+  display: inline-block;
+}
+
+.input-birth-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.input-birth-wrap-d {
+  display: flex; /* Sử dụng Flexbox */
+  width: 50%;
+  justify-content: space-between; /* Căn đều các phần tử theo chiều ngang với khoảng cách đều giữa chúng */
+  align-items: center; /* Căn đều các phần tử theo chiều dọc giữa chúng */
+  padding: 10px;
+
+}
+/* Định dạng cho nút đăng ký */
+.register-btn {
+  text-align: center;
+}
+
+.register-red-btn {
+  background-color: rgb(47, 255, 255); /* Màu nền của nút đăng ký */
+  color: #0b0a0a; /* Màu chữ trên nút đăng ký */
+  padding: 20px 50px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-red-btn:hover {
+  background-color: #cc0000; /* Màu nền khi di chuột qua nút đăng ký */
+}
+
