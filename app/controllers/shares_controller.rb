@@ -5,14 +5,13 @@ class SharesController < ApplicationController
       end
     
       def new
-        @share = Share.new
+        @shares = Share.new
       end
 
       def create
-        @share = Share.new(share_params)
-        if @share.valid?
-          @share.save
-          binding.pry
+        binding.pry
+        @shares = Share.new(share_params)
+        if @shares.save
           redirect_to root_path
         else
           render :new
