@@ -39,14 +39,14 @@
 - belongs_to :user
 
 
-## mountain_gears 
+## gears 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
 | user               | references | null: false, foreign_key: true |
 | category_id        | interger   | null: false                    |
 | brand              | string     | null: false                    |
 | item_name          | string     | null: false                    |
-| purchase_year      | date       | null: false                    |
+| buy_year           | date       | null: false                    |
 | price              | integer    | null: false                    |
 | review             | text       | null: false                    |
 ### Association
