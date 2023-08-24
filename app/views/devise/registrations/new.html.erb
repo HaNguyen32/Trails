@@ -7,6 +7,14 @@
     <title>Trails In Viet Nam</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
+  <style>
+  .footer {
+    padding: 50px;
+    height: 35px;
+  }
+  
+
+  </style>
 
 <body>
 <%= render "layouts/navbar"%>
@@ -94,9 +102,30 @@
   </div>
 <% end %>
 </div>
+
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <%#= render "layouts/footer" %>
+
 </body>
+
 </html>
+<footer class="footer bg-drak">
+  <div class="container">
+    <p class="text-muted"> </p>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <ul class="list-unstyled">
+          <li><a class="text-drak" href="#">HOME</a></li>
+          <li><a class="text-drak" href="#">HIKES IN VIETNAM</a></li>
+      </div>
+      <div class="col-12 col-md-6">
+        <ul class="list-unstyled">
+          <li><a class="text-drak" href="#">Facebook</a></li>
+          <li><a class="text-drak" href="#">Twitter</a></li>
+          <li><a class="text-drak" href="#">山と人</a></li>
+        </ul>
+      </div>
+  </div>
+</footer>
