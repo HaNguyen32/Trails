@@ -12,6 +12,11 @@
     .d-block.w-100 {
     height: 500px; /* Điều chỉnh chiều cao theo mong muốn của bạn */
     }
+    .card {
+      padding-top: 30px;
+      padding-bottom: 50px;
+
+    }
   
  
     </style>
@@ -74,43 +79,27 @@
   </div>
 </div>
 
-<%#記事の一覧%>
+<%#登山記録の一覧%>
 
+<div class="card-group">
 <%# @shares.each do |share| %>
- <%#= link_to shares_path(item.id) do %>
-  <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <div class="card">
-                <img src="#" class="card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAsectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-                <%#= image_tag (share.image), class="card-img-top" width="100%" height="180" %>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">詳細をみる</a>
-                </div>
-            </div>
-        </div>
-   </div>
-<%# end %>
-<%# end %>
+ <%#= link_to shares_path(share.id) do %>
+<div class="card" style="width: 18rem;">
+  <%#= image_tag (share.image), class:"card-img-top",alt="..." %>
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <%#= share.title, class:"card-title"%>
+    <h5 class="card-title">Card title</h5>
+    <%#= link_to "by #{share.user.name}", user_path(share.user), class:"card-text" %>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <%#= link_to "詳細を見る", share_path(@share.id), class:"btn btn-primary" %>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <div class="card">
-                <img src="#" class="card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAsectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-                <%#= image_tag (share.image), class="card-img-top" width="100%" height="180" %>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">詳細をみる</a>
-                </div>
-            </div>
-          </div>
-        </div>
-   </div>
- 
+</div>
+</div>
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
