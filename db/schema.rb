@@ -41,16 +41,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_23_080003) do
 
   create_table "shares", charset: "utf8", force: :cascade do |t|
     t.string "title", null: false
-    t.string "area", null: false
-    t.string "mountain_area", null: false
-    t.string "mountain_name", null: false
-    t.string "date_entry", null: false
-    t.string "date_exit", null: false
+    t.string "area"
+    t.string "mountain_area"
+    t.string "mountain_name"
+    t.string "date_entry"
+    t.string "date_exit"
     t.string "companions"
-    t.string "access", null: false
-    t.string "course", null: false
-    t.string "itinerary", null: false
-    t.text "activity_record", null: false
+    t.string "access"
+    t.string "course"
+    t.string "itinerary"
+    t.text "activity_record"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
