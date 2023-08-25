@@ -9,7 +9,6 @@ class SharesController < ApplicationController
       end
 
       def create
-        binding.pry
         @shares = Share.new(share_params)
         if @shares.save
           redirect_to root_path
