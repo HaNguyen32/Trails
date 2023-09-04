@@ -32,6 +32,7 @@
       text-align: center;
       font-weight: bold;
     }
+   
 
  
     </style>
@@ -101,13 +102,11 @@
     <%= link_to share_path(share) do %>
      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 "> <!-- Sử dụng lớp col để điều chỉnh kích thước -->
       <div class="card ">
-        <%= link_to share_path(share) do %>
+       
         <%= image_tag share.image, class: "card-img-top h-auto", alt: "..." %>
         <div class="card-body p-3 ">
           <%= content_tag :h5, share.title, class: "card-title" %>
-          <a href="#" class="btn btn-primary">詳細を見る</a>
-          <%#= link_to "by #{share.user.nick_name}", user_path(share.user), class: "card-text" %>
-         <% end %>
+          <%= link_to "詳細を見る", share_path(share), class: "btn btn-primary" %>
         </div>
       </div>
       </div>
@@ -115,6 +114,61 @@
   <% end %>
 </div>
 <%#登山記録の一覧%>
+<div class="card-header">
+
+    <h2>登山道具</h2>
+    <h6>情報をシェアしましょう！！</h6>
+</div>
+
+
+<%# 道具シェアー%>
+
+<div class="card" style="width: 18rem;">
+  <img src="/assets/IMG_1950.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
+<%# 道具シェアー%>
+
+<%# footer%>
+<div class="card text-bg-dark">
+<img src="/assets/footer_new.jpeg" class="d-block w-100" alt="...">
+<div class="card-img-overlay">
+<footer class="footer ">
+  <div class="container ">
+    <p class="text-muted bg-dark width-100%"> </p>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <ul class="list-unstyled">
+          <li><a class="text-drak" href="#">HOME</a></li>
+          <li><a class="text-drak" href="#">新規登録</a></li>
+          <li><a class="text-drak" href="#">HIKES IN VIETNAM</a></li>
+      </div>
+      <div class="col-12 col-md-6">
+        <ul class="list-unstyled">
+          <li><a class="text-drak" href="#">Facebook</a></li>
+          <li><a class="text-drak" href="#">Twitter</a></li>
+          <li><a class="text-drak" href="#">山と人</a></li>
+        </ul>
+      </div>
+  </div>
+  </div>
+  </div>
+</footer>
+<%# footer%>
+
 
 
     <!-- Optional JavaScript -->
