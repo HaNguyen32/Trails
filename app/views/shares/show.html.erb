@@ -20,8 +20,11 @@
   <%# navbar %>
   <%= render "layouts/navbar"%>
   <%# navbar %>
-
-   <h1 class="text-center"><%= link_to "Hello !!#{current_user.nick_name}さん", "#" %></h1>
+ <% if user_signed_in? %>
+  <h1 class="text-center"><%= link_to "Hello !!#{current_user.nick_name}さん", "#" %></h1>
+ <% else %>
+  <h1 class="text-center"> Hello Guest!!</h1>
+  <% end %>
 
  <%#記事の詳細%>
  <div class="container" >
