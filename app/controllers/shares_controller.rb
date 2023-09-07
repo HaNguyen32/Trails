@@ -24,7 +24,7 @@ class SharesController < ApplicationController
 
   def share_params
     params.require(:share).permit(:title, :area, :mountain_area, :mountain_name, :date_entry, :date_exit,
-        :companions, :access, :course, :itinerary, :activity_record, :image).merge(user_id: current_user.id)
+        :companions, :access, :course, :itinerary, :activity_record, {images: []}).merge(user_id: current_user.id)
   end
     
 end

@@ -29,7 +29,7 @@
  <%#記事の詳細%>
  <div class="container" >
   <div class="card ">
-  <%= image_tag @share.image, class: "card-img-top h-auto", alt: "..." %>
+  <%= image_tag @share.images[0], class: "card-img-top h-auto", alt: "..." %>
   <div class="card-body">
     <h1><%= @share.title %> </h1>
     <h3><%= link_to "by #{@share.user.nick_name}", user_path(@share.user), class: "card-text" %></h3>
