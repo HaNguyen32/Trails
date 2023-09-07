@@ -100,7 +100,7 @@
     <div class="mb-3">
        <%= f.label :image_tag, class: "col-sm-6 col-form-label" do %>
        <strong>写真をアプロードする</strong>
-       <%= f.file_field :image, class: "form-control", id: "disabledTextInput" %>
+       <%= f.file_field :image, name: 'share[images][]', data:{index: 0}, class: "form-control", id: "disabledTextInput" %>
        <% end %>
    </div>
    <div class="container text-center d-grid gap-2 col-6 mx-auto">
